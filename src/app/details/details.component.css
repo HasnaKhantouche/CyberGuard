@@ -1,0 +1,137 @@
+.pic{
+    width: 2286px;
+    height: 1030px;
+    position:absolute;
+    z-index: -1;
+}
+.header {
+    position: absolute; 
+    justify-content: space-between;
+    z-index: 2; /* Ensures it's above the background */
+  }
+
+  .back{
+    position:absolute ;
+    z-index: 1; /* Ensure text is above the background image */
+    top: 170px; /* Position the text at the top of the container */
+    left: 17%; /* Center the text horizontally */
+    width: 90px;
+    height: 90px;
+}
+
+.body h1 {
+    position: absolute;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    top: 200px;
+    left: 35%;
+    text-shadow: 
+        -3px -3px 0 rgb(101, 255, 242),  
+        -3px -3px 0 rgb(101, 255, 242),  
+        -3px -3px 0 rgb(101, 255, 242),  
+        -3px -3px 0 rgb(101, 255, 242); /* Add a white shadow to create the border effect */
+}
+
+.vertical-line {
+    border-left: 6px solid #9BB7FF; /* Specify the width, style, and color of the border */
+    height: 500px; /* Specify the height of the line */
+    left: 49%;
+    top: 320px;
+    position: absolute;
+}
+
+.content h2{
+    position: absolute;
+    font-family: cursive;
+    color: #CDFFCF;
+    font-size: 30px;
+    top: 10px;
+    left: 31%;
+    
+}
+
+.content h3{
+    position: absolute;
+    font-family: cursive;
+    color: #CDFFCF;
+    font-size: 30px;
+    top: 8px;
+    left: 32%;
+    
+}
+
+.info1 {
+    position:absolute;
+    padding: 5px;
+    border: 3px solid #FFC3C3;
+    border-radius: 10px;
+    top: 300px;
+    left: 20%;
+    width: 600px;
+    height: 500px; /* Set a fixed height */
+
+  }
+
+  .info2 {
+    position:absolute;
+    padding: 5px;
+    border: 3px solid #FFC3C3;
+    border-radius: 10px;
+    top: 300px;
+    left: 52%;
+    width: 600px;
+    height: 500px; /* Set a fixed height */
+
+  }
+
+  .buttons{
+    position: absolute;
+    top: 930px;
+    color: #CDFFCF;
+    display: flex;
+    left: 24%;
+  }
+
+  .investigate-btn {
+    background-color: none;
+    border: 3px solid #FFFB93;
+    border-radius: 25px;
+    color: white;
+    font-weight: lighter;
+    font-size: 25px; /* Increase the font size */
+    font-family:cursive;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-right: 320px; /* Adjust the margin as needed */
+    width: 380px; /* Set a fixed width */
+    height: 60px; /* Set a fixed height */
+    display: flex; /* Enable flexbox for centering */
+    justify-content: center; /* Center the text horizontally */
+    align-items: center; /* Center the text vertically */
+  }
+  
+  .feedback-btn {
+    background-color: none;
+    border: 3px solid #FFFB93;
+    border-radius: 25px;
+    color: white;
+    font-weight: lighter;
+    font-size: 25px; /* Increase the font size */
+    font-family:cursive;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-right: 20px; /* Adjust the margin as needed */
+    width: 380px; /* Set a fixed width */
+    height: 60px; /* Set a fixed height */
+    display: flex; /* Enable flexbox for centering */
+    justify-content: center; /* Center the text horizontally */
+    align-items: center; /* Center the text vertically */
+  }
+  
+  .feedback-btn:hover{
+    background-color: rgb(175, 98, 98);
+  }
+  .investigate-btn:hover{
+    background-color: rgb(175, 98, 98);
+  }

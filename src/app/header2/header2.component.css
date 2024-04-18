@@ -1,0 +1,73 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: none; /* Set the background color */
+    color: white; /* Set the text color */
+  }
+
+.logo {
+        position: absolute;
+        top: 10px; /* Adjust this value to move the logo up or down */
+        left: 10px; /* Adjust this value to move the logo left or right */
+        width: 80px; /* Adjust the width of the logo */
+        height: auto; /* Maintain aspect ratio */
+        z-index: 1; /* Ensure the logo is above the background */
+}
+
+.project-name {
+    color: #3794A8; /* Set text color to white or any contrasting color */
+  font-size: 80px; /* Adjust based on your preference */
+  font-weight: bold; /* Make the project name bold */
+  position: relative; /* Adjust if necessary, depending on your layout needs */
+  z-index: 1; /* Ensure the text is above the background */
+  margin-left: 100px; /* Adjust based on the actual size of your logo */
+  }
+  
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 5px;
+    border: 3px solid #73EEFF;
+    border-radius: 10px;
+    margin-left: 1100px;
+    margin-right: 20px;
+    width: 250px;
+    height: 50px; /* Set a fixed height */
+
+  }
+  
+  .user-icon {
+    height:40px;
+    width: 50px;
+    margin-left: 7px;
+  }
+  
+  .username {
+    font-weight:lighter;
+    font-size: 25px;
+    margin-left: 40px;
+  }
+  
+  .logout-btn {
+    background-color: none;
+    border: 3px solid #FFFB93;
+    border-radius: 25px;
+    color: white;
+    font-weight: lighter;
+    font-size: 25px; /* Increase the font size */
+    font-family:cursive;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-right: 20px; /* Adjust the margin as needed */
+    width: 200px; /* Set a fixed width */
+    height: 40px; /* Set a fixed height */
+    display: flex; /* Enable flexbox for centering */
+    justify-content: center; /* Center the text horizontally */
+    align-items: center; /* Center the text vertically */
+  }
+  
+  

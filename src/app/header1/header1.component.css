@@ -1,0 +1,68 @@
+.header {
+    position: relative; /* This makes child elements with absolute positioning relative to this container */
+    z-index: 2; /* Ensures it's above the background */
+  }
+
+.logo {
+        position: absolute;
+        top: 10px; /* Adjust this value to move the logo up or down */
+        left: 10px; /* Adjust this value to move the logo left or right */
+        width: 80px; /* Adjust the width of the logo */
+        height: auto; /* Maintain aspect ratio */
+        z-index: 1; /* Ensure the logo is above the background */
+}
+
+.project-name {
+    color: #3794A8; /* Set text color to white or any contrasting color */
+  font-size: 80px; /* Adjust based on your preference */
+  font-weight: bold; /* Make the project name bold */
+  position: relative; /* Adjust if necessary, depending on your layout needs */
+  z-index: 1; /* Ensure the text is above the background */
+  margin-left: 100px; /* Adjust based on the actual size of your logo */
+  }
+
+  .menu {
+    position: absolute;
+    top: 10px;
+    right: 310px;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu ul li {
+    padding: 0px 40px; /* Adjust the spacing between menu items */
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #ffffff; /* Adjust color as needed */
+    font-size: 50px; /* Adjust font size as needed */
+}
+
+.login-btn {
+    background-color: #3794A8; /* Set background color */
+    color: white; /* Set text color */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Add padding */
+    margin-left: 1500px;
+    cursor: pointer; /* Add cursor pointer on hover */
+    font-size: 40px; /* Set font size */
+    width: 200px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.login-btn:hover {
+    background-color: #153a46; /* Change background color on hover */
+}
+
+.active {
+    border-bottom: 2px solid #fff; /* Increase thickness and change color */
+    display: inline-block; /* Wrap the underline tightly around the text */
+    padding-bottom: 1px; /* Optional: Add padding to separate the text from the line */
+  }
+  
+  

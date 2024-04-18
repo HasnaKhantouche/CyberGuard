@@ -1,0 +1,163 @@
+.pic{
+    width: 2271px;
+    height: 2600px;
+    position:absolute;
+    z-index: -1;
+}
+.header {
+    position: absolute; 
+    justify-content: space-between;
+    z-index: 2; /* Ensures it's above the background */
+  }
+  .back{
+    position:absolute ;
+    z-index: 1; /* Ensure text is above the background image */
+    top: 160px; /* Position the text at the top of the container */
+    left: 12%; /* Center the text horizontally */
+    width: 90px;
+    height: 90px;
+}
+
+.body h1 {
+    position: absolute;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(208, 255, 255);
+    font-size: 70px;
+    top: 230px;
+    left: 17%;
+    text-shadow: 
+        -1px -1px 0 rgb(9, 8, 8),  
+        -3px -3px 0 rgb(230, 135, 135),  
+        -3px -3px 0 rgb(255, 104, 252),  
+        -3px -3px 0 rgb(0, 0, 0); /* Add a white shadow to create the border effect */
+}
+
+.info1 {
+    position:absolute;
+    padding: 5px;
+    border: 5px solid #95FFEC;
+    border-radius: 10px;
+    top: 460px;
+    left: 25%;
+    width: 1200px;
+    height: 480px; /* Set a fixed height */
+    font-display: center;
+   
+  }
+
+  .content1 p{
+    position: absolute;
+    font-family: cursive;
+    color: #f6fff6;
+    font-size: 45px;
+    top: 1px;
+    left: 8%;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+
+  .content h2{
+    position: absolute;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #FFE6A7;
+    font-size: 50px;
+    top: 1000px;
+    left: 35%;
+    text-shadow: 
+        -1px -1px 0 rgb(9, 8, 8),  
+        -3px -3px 0 rgb(0, 0, 0),  
+        -3px -3px 0 rgb(255, 104, 252),  
+        -3px -3px 0 rgb(0, 0, 0); /* Add a white shadow to create the border effect */
+  }
+  .content h3{
+    position: absolute;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #FFE6A7;
+    font-size: 50px;
+    top: 1750px;
+    left: 43%;
+    text-shadow: 
+        -1px -1px 0 rgb(9, 8, 8),  
+        -3px -3px 0 rgb(0, 0, 0),  
+        -3px -3px 0 rgb(255, 104, 252),  
+        -3px -3px 0 rgb(0, 0, 0); /* Add a white shadow to create the border effect */
+  }
+
+  .info2 {
+    position:absolute;
+    padding: 5px;
+    border: 5px solid #95FFEC;
+    border-radius: 10px;
+    top: 1200px;
+    left: 25%;
+    width: 1200px;
+    height: 500px; /* Set a fixed height */
+    font-display: center;
+   
+  }
+
+  .content2 p{
+    position: absolute;
+    font-family: cursive;
+    color: #f6fff6;
+    font-size: 45px;
+    top: 1px;
+    left: 8%;
+    margin-right: 20px;
+    
+  }
+.info3 p{
+    position: absolute;
+    font-family: cursive;
+    color: #C1FAFA;
+    font-size: 30px;
+    top: 1900px;
+    left: 19%;
+    margin-right: 20px;
+    width: 1400px;
+}
+
+.info3 input, 
+.info3 textarea {
+    position: absolute;
+    margin-bottom: 20px;
+    height: 50px;
+    width: 1400px;
+    padding: 10px;
+    border-bottom: 5px ridge #94D8FF;
+    border-radius: 20px;
+    background-color: transparent;
+    color: #c0e0f3;
+    font-size: 25px;
+    top: 2030px;
+    left: 19%;
+}
+
+.info4 p{
+    position: absolute;
+    font-family: cursive;
+    color: #A2FFC7;
+    font-size: 20px;
+    top: 2120px;
+    left: 19%;
+    margin-right: 20px;
+    width: 1400px;
+}
+
+.body button {
+    background-color: transparent;
+    color: rgb(246, 255, 252);
+    width: 200px;
+    height: 80px;
+    padding: 10px 20px;
+    border: 5px solid #D5FF5E;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 30px;
+    position: absolute;
+    top: 2300px;
+    left: 45%;
+}
+.body button:hover{
+    background-color: #5c4c96;
+}
