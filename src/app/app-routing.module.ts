@@ -15,6 +15,7 @@ import { SqlinjectionDetectionComponent } from './sqlinjection-detection/sqlinje
 import { PhshingDetectionComponent } from './phshing-detection/phshing-detection.component';
 import { AboutComponent } from './about/about.component';
 import { Footer2Component } from './footer2/footer2.component';
+import { FeedbackComponent } from './feedback/feedback.component';
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'home', component: HomeComponent },
@@ -32,6 +33,7 @@ const routes: Routes = [
   { path: 'phishing', component: PhshingDetectionComponent },
   { path: 'footer2', component: Footer2Component },
   { path: 'about', component: AboutComponent },
+  { path: 'feedback', component: FeedbackComponent },
 ];
 
 @NgModule({

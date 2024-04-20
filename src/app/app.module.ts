@@ -19,6 +19,7 @@ import { PhshingDetectionComponent } from './phshing-detection/phshing-detection
 import { HttpClientModule } from '@angular/common/http';
 import { AboutComponent } from './about/about.component';
 import { Footer2Component } from './footer2/footer2.component';
+import { FeedbackComponent } from './feedback/feedback.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,7 +37,8 @@ import { Footer2Component } from './footer2/footer2.component';
     SqlinjectionDetectionComponent,
     PhshingDetectionComponent,
     AboutComponent,
-    Footer2Component
+    Footer2Component,
+    FeedbackComponent
   ],
   imports: [
     BrowserModule,
