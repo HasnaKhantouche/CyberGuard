@@ -13,7 +13,8 @@ import { MalwareDetectionComponent } from './malware-detection/malware-detection
 import { BruteforceDetectionComponent } from './bruteforce-detection/bruteforce-detection.component';
 import { SqlinjectionDetectionComponent } from './sqlinjection-detection/sqlinjection-detection.component';
 import { PhshingDetectionComponent } from './phshing-detection/phshing-detection.component';
-
+import { AboutComponent } from './about/about.component';
+import { Footer2Component } from './footer2/footer2.component';
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'home', component: HomeComponent },
@@ -29,6 +30,8 @@ const routes: Routes = [
   { path: 'bruteforce', component: BruteforceDetectionComponent },
   { path: 'sql', component: SqlinjectionDetectionComponent },
   { path: 'phishing', component: PhshingDetectionComponent },
+  { path: 'footer2', component: Footer2Component },
+  { path: 'about', component: AboutComponent },
 ];
 
 @NgModule({

@@ -16,7 +16,9 @@ import { MalwareDetectionComponent } from './malware-detection/malware-detection
 import { BruteforceDetectionComponent } from './bruteforce-detection/bruteforce-detection.component';
 import { SqlinjectionDetectionComponent } from './sqlinjection-detection/sqlinjection-detection.component';
 import { PhshingDetectionComponent } from './phshing-detection/phshing-detection.component';
-
+import { HttpClientModule } from '@angular/common/http';
+import { AboutComponent } from './about/about.component';
+import { Footer2Component } from './footer2/footer2.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,11 +34,14 @@ import { PhshingDetectionComponent } from './phshing-detection/phshing-detection
     MalwareDetectionComponent,
     BruteforceDetectionComponent,
     SqlinjectionDetectionComponent,
-    PhshingDetectionComponent
+    PhshingDetectionComponent,
+    AboutComponent,
+    Footer2Component
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

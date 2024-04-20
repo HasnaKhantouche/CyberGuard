@@ -1,3 +1,4 @@
+
 .pic{
     width: 2271px;
     height: 2600px;
@@ -132,17 +133,24 @@
     left: 19%;
 }
 
-.info4 p{
+.import-button {
     position: absolute;
     font-family: cursive;
     color: #A2FFC7;
     font-size: 20px;
     top: 2120px;
-    left: 19%;
+    left: 2%;
     margin-right: 20px;
+    width: 1700px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.import-button:hover{
+  color: #cfc1ff;
 }
 
-.body button {
+.analyze-button  {
     background-color: transparent;
     color: rgb(246, 255, 252);
     width: 200px;
@@ -156,6 +164,6 @@
     top: 2300px;
     left: 45%;
 }
-.body button:hover{
+.analyze-button:hover{
     background-color: #5c4c96;
 }

@@ -24,9 +24,11 @@
                 <input type="text" id="data" name="data" placeholder="Enter your data">
             </div>
             <div class="info4">
-                <p>Import file ?  Our system processes these files to identify anomalies that indicate a DDoS attack.</p>
-            </div>
+                <input type="file" #fileInput style="display: none;" (change)="onFileSelected($event)">
+                <button id="importButton" class="import-button" (click)="fileInput.click()">Import file ? Our system processes these files to identify anomalies that indicate a DDoS attack.</button>
+                <button id="analyzeButton" class="analyze-button" (click)="analyzeFile()">Analyze</button>
+            </div>            
         </div>
-        <button type="submit">Analyze</button>
     </div>
+    <app-footer2></app-footer2>
 </div>
