@@ -1,0 +1,27 @@
+<div class="login-container">
+    <div class="header">
+        <app-header1></app-header1>
+    </div>
+    <img class="pic" src='../../assets/login.png' alt="login">
+    <div class="form">
+        <div class="username">
+            <img class="icon" src='../../assets/loginuser.png' alt="loginuser">
+            <input type="text" id="username" name="username" placeholder="Username">
+        </div>
+        <div class="password">
+            <img class="icon" src='../../assets/loginpwd.png' alt="loginpwd">
+            <input type="text" id="password" name="password" placeholder="Password">
+            <div class="password-actions">
+                <label>
+                    <input type="checkbox" id="showPasswordCheckbox" name="showPasswordCheckbox">
+                    Show Password
+                </label>
+                <span class="forgot-password" id="forgotPasswordButton">Forgot Password?</span>
+            </div>            
+        </div>
+        <div class="btn">
+            <button type="login">LOGIN</button>
+        </div>
+    </div>
+    <app-footer></app-footer>
+</div>

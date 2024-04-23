@@ -1,0 +1,70 @@
+<div class="manage-container">
+    <div class="header">
+        <app-header2></app-header2>
+    </div>
+    <img class="pic" src='../../assets/user-management.png' alt="manage">
+    <img class="back" src='../../assets/back.png' alt="back">
+    <div class="body">
+        <h1>User Management</h1>
+        <div class="section1">
+            <div class="searching">
+                <img class="icon" src='../../assets/search.png' alt="search">
+                <input type="text" id="search" name="search" placeholder="Search by name, email, or role ...">
+            </div>
+            <div class="s1">
+            <select id="role" name="role">
+                <option value="admin">Admin</option>
+                <option value="analyst">Analyst</option>
+            </select>
+            </div>
+            <div class="s2">
+            <select id="status" name="status">
+                <option value="active">Active</option>
+                <option value="inactive">Inactive</option>
+            </select>
+            </div>
+            <button id="addUserBtn">Add User</button>
+        </div>
+        <div>
+            <table id="userTable">
+                <thead>
+                    <tr>
+                        <th>Username</th>
+                        <th>Email</th>
+                        <th>Role</th>
+                        <th>Status</th>
+                        <th>Last Login Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Example rows, you can add more dynamically -->
+                    <tr>
+                        <td>John Doe</td>
+                        <td>johndoe&#64;example.com</td>
+                        <td>Admin</td>
+                        <td>Active</td>
+                        <td>thu 21:09 23/7/2001</td>
+                        <td class="actions">
+                            <img src="../assets/edit.png" alt="Edit" class="edit-icon">
+                            <img src="../assets/remove.png" alt="Remove" class="remove-icon">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>hasna khan</td>
+                        <td>johndoe&#64;example.com</td>
+                        <td>Analyst</td>
+                        <td>Inactive</td>
+                        <td>thu 21:09 23/7/2001</td>
+                        <td class="actions">
+                            <img src="../assets/edit.png" alt="Edit" class="edit-icon">
+                            <img src="../assets/remove.png" alt="Remove" class="remove-icon">
+                        </td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </tbody>
+            </table>
+        </div>
+        
+    </div>
+    <app-footer2></app-footer2>
+</div>

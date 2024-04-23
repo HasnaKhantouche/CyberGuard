@@ -3,10 +3,14 @@
         <app-header2></app-header2>
     </div>
     <img class="pic" src='../../assets/feedback.png' alt="detection">
-    <img class="back" src='../../assets/back.png' alt="back">
+    <div class="s1">
+    <img id="precedentIcon" class="back" src='../../assets/back.png' alt="back" (click)="goBack()">>
+    </div>
     <h1>We appreciate your feedback !</h1>
     <p>We are always looking for ways to improve your experience. Please take a moment to tell us what you think.</p>
-    <input type="text" id="feedbackInput" placeholder="Enter your feedback" />
+    <textarea id="message" name="message" placeholder="Enter your feedback ..."></textarea>
+    <div class="s2">
     <button type="button" onclick="submitFeedback()">Submit my Feedback</button>
+    </div>
     <app-footer></app-footer>
 </div>

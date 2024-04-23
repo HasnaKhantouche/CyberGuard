@@ -1,0 +1,94 @@
+.alertback1-container {
+    background-image: url('../../assets/alertback1.png');
+    background-size: cover; /* Resize image to cover the container */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Do not repeat the background image */
+    height: 97vh; /* Set the height of the container to full viewport height */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    image-rendering: crisp-edges;
+    filter: brightness(1);
+    filter: blur(0);
+    z-index: -1;
+}
+
+.alertback2-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center the text vertically */
+    text-align: center; /* Center the text horizontally */
+    color: rgb(0, 0, 0); /* Set text color to white */
+    position: relative; /* Add position relative for absolute positioning of images */
+}
+
+.alertback2-container img {
+    width: 85%; /* Make the image responsive */
+    max-width: 100%; /* Set a maximum width */
+    height: 900px; /* Maintain aspect ratio */
+    position: absolute; /* Position images absolutely */
+    top: 0; /* Position at the top */
+    left: 50%; /* Position at the center horizontally */
+    transform: translateX(-50%); /* Center the image horizontally */
+    margin-top: 20px; /* Adjust the margin from the top */
+}
+
+.title-text {
+    font-size: 60px; /* Adjust the font size as needed */
+    font-family:'Pacifico', cursive;
+    font-weight: bold; /* Make the title text bold */
+    margin-top: 750px; /* Adjust the margin from the top */
+    position: absolute; /* Position the text inside the container */
+    z-index: 1; /* Ensure text is above the background image */
+}
+
+.explanation-text {
+    font-size: 45px; /* Adjust the font size as needed */
+    font-family:  cursive; 
+    margin-top: 20px; /* Adjust the margin from the top */
+    width: 700px;
+    position: absolute; /* Position the text inside the container */
+    z-index: 1; /* Ensure text is above the background image */
+    top: 450px; /* Position the text at the bottom of the container */
+    left: 50%; /* Center the text horizontally */
+    transform: translateX(-50%); /* Center the text horizontally */
+}
+
+
+.alertpic img {
+    width: 400px; /* Set a fixed width for the image */
+    height: 550px; /* Set a fixed height for the image */
+    margin-top: 160px;
+    z-index: 0; /* Ensure the image is behind the text */
+    position: absolute; /* Position the image absolutely */
+    top: 50%; /* Position at the center vertically */
+    left: 8%; /* Position at the right side */
+    transform: translateY(+15%); /* Center the image vertically */
+}
+
+.buttons-container {
+    z-index: 1; /* Ensure buttons are above the background */
+    display: flex; /* Use flexbox to align buttons horizontally */
+    justify-content: center; /* Center the buttons horizontally */
+    margin-top: 20px; /* Adjust the margin from the top */
+    position: absolute; /* Position the buttons absolutely */
+    transform: translateX(-50%); /* Center the buttons horizontally */
+    left: 50%; /* Center the buttons horizontally */
+    top: 700px;
+}
+
+.button {
+    font-size: 30px;
+    font-weight: bold;
+    font-family:  cursive; 
+    padding: 30px 50px; /* Add padding to the buttons */
+    margin: 0 10px; /* Add margin between buttons */
+    background-color: #ffe438; /* Set background color */
+    color: rgb(0, 0, 0); /* Set text color to white */
+    border: 5px solid black; 
+    border-radius: 10px; /* Add border radius */
+    cursor: pointer; /* Add pointer cursor on hover */
+}
+
+.button:hover {
+    background-color: #d49a05; /* Change background color on hover */
+}

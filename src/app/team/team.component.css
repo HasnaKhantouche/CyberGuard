@@ -1,0 +1,65 @@
+.pic{
+    width: 2285px;
+    height: 1030px;
+}
+.header {
+    position: absolute; /* This makes child elements with absolute positioning relative to this container */
+    z-index: 2; /* Ensures it's above the background */
+  }
+.s1 h1{
+    position: absolute;
+    top: 150px;
+    left: 43%;
+    color: aliceblue;
+    font-size: 60px;
+}
+
+.s1 p{
+    position: absolute;
+    top: 230px;
+    left: 40%;
+    color: aliceblue;
+    font-size: 40px;
+}
+
+.team-members {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    gap: 280px;
+    top: 400px;
+    left: 17%;
+}
+
+.member  img {
+    top: 0px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    box-shadow: 0 0 100px rgba(255, 255, 255, 0.3);
+}
+
+.member a img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    margin-top: 100px;
+    
+}
+
+.member h2 {
+    position: absolute;
+    margin-top: 30px;
+    font-size: 30px;
+    color: aliceblue;
+    margin-bottom: 15px;
+    margin-left: 30px;
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}

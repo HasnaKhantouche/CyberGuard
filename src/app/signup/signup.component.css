@@ -1,0 +1,83 @@
+.pic{
+    width: 2275px;
+    height: 1030px;
+}
+
+.back{
+    position:absolute ;
+    z-index: 1; /* Ensure text is above the background image */
+    top: 60px; /* Position the text at the top of the container */
+    left: 5%; /* Center the text horizontally */
+    width: 90px;
+    height: 90px;
+}
+.form{
+    position: absolute;
+    top: 235px;
+    left: 12%;
+}
+.username input,.email input,.password input,.Cpassword input{
+    margin-bottom: 108px;
+    background-color: transparent;
+    height: 60px;
+    width: 400px;
+    color: aliceblue;
+    font-size: 30px;
+    border-width: 2px;
+    border-color: transparent;
+    text-align: center;
+}
+.username input::placeholder,.email input::placeholder,.password input::placeholder,.Cpassword input::placeholder {
+    color: #c3bbbb; /* Set your desired color */
+    opacity: 1; /* Optional: Adjust if you need to change the opacity */
+}
+
+.camera img{
+    top: 300px;
+    left: 65%;
+    width: 180px;
+    height: 130px;
+    position: absolute;
+}
+
+.edit img{
+    top: 370px;
+    left: 72.7%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+}
+.edit{
+    display: flex;
+}
+.edit input{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.edit label{
+    color: beige;
+    font-size: 25px;
+    position: absolute;
+    top: 350px;
+    left: 79%;
+    
+}
+
+.checkboxes input{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.checkboxes label{
+    color: beige;
+    font-size: 25px;
+    position: absolute;
+    top: 450px;
+    left: 79%;
+    
+}
+
+

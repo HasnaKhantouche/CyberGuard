@@ -1,0 +1,82 @@
+.pic{
+    width: 2285px;
+    height: 1030px;
+}
+.header {
+    position: absolute; /* This makes child elements with absolute positioning relative to this container */
+    z-index: 2; /* Ensures it's above the background */
+  }
+
+
+.form{
+    position: absolute;
+    top: 300px;
+    left: 60%;
+}
+
+.username, .password{
+    margin-bottom: 60px;
+    position: relative; /* Establishes a positioning context for positioning the icon absolutely within */
+    display: inline-block;
+}
+
+.username .icon {
+    position: absolute; /* Position the icon absolutely within the relative container */
+    width: 80px;
+    height: 80px;
+    left: 10px; /* Space from the left of the container, adjust as needed */
+    top: 40%; /* Center vertically */
+    transform: translateY(-50%); /* Ensures the icon is perfectly centered vertically */
+}
+.password .icon{
+    position: absolute; /* Position the icon absolutely within the relative container */
+    width: 80px;
+    height: 80px;
+    left: 10px; /* Space from the left of the container, adjust as needed */
+    top: 30%; /* Center vertically */
+    transform: translateY(-50%); /* Ensures the icon is perfectly centered vertically */
+}
+
+.username input, .password input{
+    background-color: transparent;
+    width: 400px;
+    height: 90px;
+    color: azure;
+    font-size: 30px;
+    padding-left: 110px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    border-width: 5px;
+    border-color: #FA9FF1;
+}
+
+.password .password-actions input{
+    width: 30px;
+    height: 30px;
+}
+
+.password label{
+    color: blanchedalmond;
+    font-size: 20px;
+    margin-right: 150px;
+}
+.forgot-password{
+    color: blanchedalmond;
+    font-size: 20px;
+}
+.btn button {
+    background-color: transparent;
+    color: rgb(246, 255, 252);
+    width: 200px;
+    height: 80px;
+    padding: 10px 20px;
+    border: 5px solid #D5FF5E;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 30px;
+    margin-left: 150px;
+}
+
+.btn button:hover{
+    background-color: rgb(2, 4, 29);
+}

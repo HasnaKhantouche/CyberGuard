@@ -94,7 +94,7 @@
   }
 
   .investigate-btn {
-    background-color: transparent;
+    background-color: none;
     border: 3px solid #FFFB93;
     border-radius: 25px;
     color: white;

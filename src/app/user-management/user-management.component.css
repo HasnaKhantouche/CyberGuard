@@ -1,0 +1,182 @@
+.pic{
+    width: 2271px;
+    height: 2600px;
+    position:absolute;
+    z-index: -1;
+}
+.header {
+    position: absolute; 
+    justify-content: space-between;
+    z-index: 2; /* Ensures it's above the background */
+  }
+  .back{
+    position:absolute ;
+    z-index: 1; /* Ensure text is above the background image */
+    top: 160px; /* Position the text at the top of the container */
+    left: 12%; /* Center the text horizontally */
+    width: 90px;
+    height: 90px;
+}
+
+.body h1{
+    position: absolute;
+    width: 400px;
+    text-align: center;
+    font-size: 80px;
+    font-weight: lighter;
+    color: #E7A2FF;
+    text-shadow: 3px 3px 5px #8232D2;
+    left: 40%;
+    top: 150px;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.body input {
+    position: absolute;
+    margin-bottom: 20px;
+    height: 50px;
+    width: 600px;
+    padding: 10px;
+    border-width: 5px;
+    border-color: #FFE895 ;
+    border-radius: 20px;
+    background-color: transparent;
+    color: #c0e0f3;
+    font-size: 25px;
+    top: 500px;
+    left: 8%;
+}
+
+.searching input[type="text"]::placeholder {
+    padding-left: 80px; /* Adjust as needed */
+}
+
+.icon{
+    width: 45px;
+    height: 50px;
+    position: absolute;
+    top: 518px;
+    left: 32%;
+}
+.section1{
+    display: flex;
+}
+
+.s1 select{
+    position: absolute;
+    color: azure;
+    font-size: 30px;
+    width: 200px;
+    height: 70px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 5px solid #f3a5ff;
+    background-color: transparent;
+    top: 510px;
+    left: 42%;
+}
+.s2 select{
+    position: absolute;
+    color: azure;
+    font-size: 30px;
+    width: 200px;
+    height: 70px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 5px solid #f3a5ff;
+    background-color: transparent;
+    top: 510px;
+    left: 58%;
+}
+
+.section1 select:focus {
+    outline: none;
+    border-color: #9921b5;
+    background-color: transparent;
+}
+
+/* Style the dropdown menu */
+.section1 select::-ms-expand {
+    display: none; /* Hide default arrow in IE10+ */
+}
+
+/* Style the dropdown options */
+.section1 select option {
+    background-color: black; /* Background color of options */
+    color: rgb(255, 255, 255); /* Text color of options */
+    border-color: #9921b5;
+    border-width: 3px;
+}
+
+.body button {
+    position: absolute;
+    color: azure;
+    font-size: 30px;
+    width: 200px;
+    height: 70px;
+    padding: 5px;
+    border-radius: 15px;
+    border: 5px solid #f3a5ff;
+    background-color: transparent;
+    top: 510px;
+    left: 75%;
+}
+.body button:hover{
+    background-color: #311347;
+}
+
+#userTable {
+    width: 80%;
+    height: 100px;
+    border-collapse: collapse;
+    position: absolute;
+    top: 700px;
+    left: 10%;
+}
+
+#userTable th,
+#userTable td {
+    border-radius: 5px;
+    border: 5px solid #e223ff;
+    background-color: transparent;
+    padding: 8px;
+    text-align: center;
+    color: aliceblue;
+    font-size: 30px;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    width: 200px;
+}
+
+.actions img {
+    cursor: pointer;
+    margin-left: 25px;
+    width: 50px; /* Set the width to your desired size */
+    height: 50px; /* Set the height to your desired size */
+}
+
+.actions img:last-child {
+    margin-right: 0;
+}
+
+/* Light-colored text shadow for better visibility */
+.actions img, .body input, .body button {
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+}
+#userTable .new-row {
+    border-radius: 5px;
+    border: 5px solid #e223ff;
+    background-color: transparent;
+    padding: 8px;
+    text-align: center;
+    color: aliceblue;
+    font-size: 30px;
+  }
+
+
+  
+
+

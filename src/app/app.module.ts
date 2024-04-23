@@ -20,6 +20,19 @@ import { HttpClientModule } from '@angular/common/http';
 import { AboutComponent } from './about/about.component';
 import { Footer2Component } from './footer2/footer2.component';
 import { FeedbackComponent } from './feedback/feedback.component';
+import { UserManagementComponent } from './user-management/user-management.component';
+import { AlertSqlComponent } from './alert-sql/alert-sql.component';
+import { AlertBruteComponent } from './alert-brute/alert-brute.component';
+import { AlertMalwareComponent } from './alert-malware/alert-malware.component';
+import { AlertPhishingComponent } from './alert-phishing/alert-phishing.component';
+import { DetailsSqlComponent } from './details-sql/details-sql.component';
+import { DetailsMalwareComponent } from './details-malware/details-malware.component';
+import { DetailsBruteforceComponent } from './details-bruteforce/details-bruteforce.component';
+import { DetailsPhishingComponent } from './details-phishing/details-phishing.component';
+import { RouterModule } from '@angular/router';
+import { TeamComponent } from './team/team.component';
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,12 +51,25 @@ import { FeedbackComponent } from './feedback/feedback.component';
     PhshingDetectionComponent,
     AboutComponent,
     Footer2Component,
-    FeedbackComponent
+    FeedbackComponent,
+    UserManagementComponent,
+    AlertSqlComponent,
+    AlertBruteComponent,
+    AlertMalwareComponent,
+    AlertPhishingComponent,
+    DetailsSqlComponent,
+    DetailsMalwareComponent,
+    DetailsBruteforceComponent,
+    DetailsPhishingComponent,
+    TeamComponent,
+    LoginComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
