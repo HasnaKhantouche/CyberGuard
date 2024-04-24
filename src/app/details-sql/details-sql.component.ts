@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./details-sql.component.css']
 })
 export class DetailsSqlComponent {
-
+  
 }

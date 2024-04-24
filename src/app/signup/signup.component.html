@@ -1,34 +1,45 @@
 <div class="login-container">
     <img class="pic" src='../../assets/signup.jpg' alt="signup">
-    <img class="back" src='../../assets/back.png' alt="back">
-    <div class="form">
+    <img class="back" src='../../assets/back.png' alt="back" (click)="goBack()">
+    <form>
         <div class="username">
-            <input type="text" id="username" name="username" placeholder="Username">
+            <input type="text" id="username" name="username" placeholder="Username" required>
         </div>
         <div class="email">
-            <input type="text" id="username" name="username" placeholder="Email">
+            <input type="email" id="email" name="email" placeholder="Email" required>
         </div>
         <div class="password">
-            <input type="text" id="password" name="password" placeholder="Password">      
+            <input type="password" id="password" name="password" placeholder="Password" required>   
+            <span (click)="togglePasswordVisibility('password')">Show</span>  
         </div>
         <div class="Cpassword">
-            <input type="text" id="Cpassword" name="Cpassword" placeholder="Confirm Password">      
+            <input type="password" id="Cpassword" name="Cpassword" placeholder="Confirm Password" required>      
+            <span (click)="togglePasswordVisibility('Cpassword')">Show</span>
         </div>
-    </div>
+    </form>
     <div class="other">
         <div class="camera">
-            <img src='../../assets/picture.png' alt="picture">
+            <img src='../../assets/picture.png' alt="picture" >
         </div>
         <div class="edit">
-            <img src='../../assets/editpic.png' alt="edit">
+            <label for=picture><img src='../../assets/editpic.png' alt="edit"></label>
+            <input type="file" id="picture" name="picture" (change)="previewImage($event);">
+            <img *ngIf="imageUrl" [src]="imageUrl" alt="Preview" style="max-width: 100%; max-height: 200px;"><br><br>
+        </div>
+        <div class="generate">
             <label><input type="checkbox" id="default" name="default">Generate default photo</label>
         </div>
-        <div class="checkboxes">
+        <div class="checkboxes1">
             <label><input type="checkbox" id="analystecheck" name="analystecheck">Analyst</label>
             <label><input type="checkbox" id="admincheck" name="admincheck">Admin</label>
         </div>
-        <label><input type="checkbox" id="check" name="check">I agree with privacy and policy</label>
-        <button type="signup">SIGNUP</button>
+        <div class="checkboxes2">
+            <label><input type="checkbox" id="check" name="check">I agree with privacy and policy</label>
+        </div>
+        <div class="btn">
+            <button type="signup">SIGNUP</button>
+        </div>
+        <span class="already" id="already" >Already have an account ? <span class="signin">Sign in !</span></span>
     </div>
     <app-footer></app-footer>
 </div>

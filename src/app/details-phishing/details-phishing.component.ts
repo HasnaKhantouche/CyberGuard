@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./details-phishing.component.css']
 })
 export class DetailsPhishingComponent {
-
+  
 }

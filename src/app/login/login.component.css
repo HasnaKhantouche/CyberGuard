@@ -8,10 +8,23 @@
   }
 
 
-.form{
+.login-container form{
     position: absolute;
-    top: 300px;
+    top: 370px;
     left: 60%;
+}
+
+.login-container h1{
+    position: absolute;
+    font-size: 60px;
+    color: #FA9FF1;
+    top: 190px;
+    width: 600px;
+    text-align: center;
+    left: 58%;
+    font-family: impact;
+    text-shadow: 5px 5px 5px #fdbaff;
+    -webkit-text-stroke: 1px rgb(59, 28, 58);
 }
 
 .username, .password{

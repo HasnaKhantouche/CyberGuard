@@ -93,7 +93,8 @@
     left: 24%;
   }
 
-  .investigate-btn {
+  .investigate-btn a{
+    text-decoration: none; /* Remove underline */
     background-color: transparent;
     border: 3px solid #FFFB93;
     border-radius: 25px;
@@ -105,7 +106,7 @@
     cursor: pointer;
     margin-right: 320px; /* Adjust the margin as needed */
     width: 380px; /* Set a fixed width */
-    height: 60px; /* Set a fixed height */
+    height: 47px; /* Set a fixed height */
     display: flex; /* Enable flexbox for centering */
     justify-content: center; /* Center the text horizontally */
     align-items: center; /* Center the text vertically */
@@ -132,6 +133,6 @@
   .feedback-btn button:hover{
     background-color: rgb(175, 98, 98);
   }
-  .investigate-btn:hover{
+  .investigate-btn a:hover{
     background-color: rgb(175, 98, 98);
   }

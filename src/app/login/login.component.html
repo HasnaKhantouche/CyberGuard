@@ -3,14 +3,15 @@
         <app-header1></app-header1>
     </div>
     <img class="pic" src='../../assets/login.png' alt="login">
-    <div class="form">
+    <h1>Hey , Welcome Back !</h1>
+    <form>
         <div class="username">
             <img class="icon" src='../../assets/loginuser.png' alt="loginuser">
-            <input type="text" id="username" name="username" placeholder="Username">
+            <input type="text" id="username" name="username" placeholder="Username" required>
         </div>
         <div class="password">
             <img class="icon" src='../../assets/loginpwd.png' alt="loginpwd">
-            <input type="text" id="password" name="password" placeholder="Password">
+            <input type="password" id="password" name="password" placeholder="Password" required>
             <div class="password-actions">
                 <label>
                     <input type="checkbox" id="showPasswordCheckbox" name="showPasswordCheckbox">
@@ -20,8 +21,8 @@
             </div>            
         </div>
         <div class="btn">
-            <button type="login">LOGIN</button>
+            <button id="btn" type="login">LOGIN</button>
         </div>
-    </div>
+    </form>
     <app-footer></app-footer>
 </div>

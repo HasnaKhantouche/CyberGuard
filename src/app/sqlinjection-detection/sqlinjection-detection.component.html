@@ -3,7 +3,7 @@
         <app-header2></app-header2>
     </div>
     <img class="pic" src='../../assets/detection.png' alt="detection">
-    <img class="back" src='../../assets/back.png' alt="back">
+    <img routerLink="/vue-analyst" class="back" src='../../assets/back.png' alt="back" >
     <div class="body">
         <h1>SQL Injection Attack Detection - Shield Your Data</h1>
         <div class="content">
@@ -24,10 +24,10 @@
                 <input type="text" id="data" name="data" placeholder="Enter your data">
             </div>
             <div class="info4">
-                <p> Upload files containing SQL queries (e.g., log files) for comprehensive analysis. Our system processes these files to identify anomalies that indicate a SQL injection attack.</p>
+                <input type="file" #fileInput style="display: none;" (change)="onFileSelected($event)">
+                <button id="importButton" class="import-button" (click)="fileInput.click()">Upload files containing SQL queries (e.g., log files) for comprehensive analysis. Our system processes these files to identify anomalies that indicate a SQL injection attack.</button>
+                <button id="analyzeButton" class="analyze-button" (click)="analyzeFile()">Analyze</button>
             </div>
-        </div>
-        <button type="submit">Analyze</button>
     </div>
     <app-footer2></app-footer2>
 </div>

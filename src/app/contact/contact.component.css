@@ -17,15 +17,6 @@
   margin-left: 120px;
 }
 
-.back{
-    position:absolute ;
-    z-index: 1; /* Ensure text is above the background image */
-    top: 150px; /* Position the text at the top of the container */
-    left: 5%; /* Center the text horizontally */
-    width: 110px;
-    height: 110px;
-}
-
 .chat-window {
     width: 750px;
     height: 500px;

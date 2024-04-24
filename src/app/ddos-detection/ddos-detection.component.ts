@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
 @Component({
@@ -7,12 +7,20 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./ddos-detection.component.css']
 })
 
-export class DdosDetectionComponent {
-  fileInput!: HTMLInputElement; // Add ! to indicate that it will be initialized later
-
-  // Other component code...
-
+export class DdosDetectionComponent implements OnInit{
+  fileInput!: HTMLInputElement; 
   constructor(private http: HttpClient) { }
+
+  ngOnInit(): void {
+    const analyzeElement = document.getElementById('analyzeButton');
+
+    if (analyzeElement) {
+      analyzeElement.addEventListener('click', () => {
+        window.location.href = '/alert-ddos'; 
+      });
+    }
+  }
+
 
   onFileSelected(event: any) {
     this.fileInput = event.target; // Assign the file input element to fileInput property

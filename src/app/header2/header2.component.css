@@ -52,8 +52,8 @@
     margin-left: 40px;
   }
   
-  .logout-btn {
-    background-color: none;
+  .logout-btn button{
+    background-color: transparent;
     border: 3px solid #FFFB93;
     border-radius: 25px;
     color: white;
@@ -63,8 +63,8 @@
     padding: 5px 10px;
     cursor: pointer;
     margin-right: 20px; /* Adjust the margin as needed */
-    width: 200px; /* Set a fixed width */
-    height: 40px; /* Set a fixed height */
+    width: 250px; /* Set a fixed width */
+    height: 60px; /* Set a fixed height */
     display: flex; /* Enable flexbox for centering */
     justify-content: center; /* Center the text horizontally */
     align-items: center; /* Center the text vertically */

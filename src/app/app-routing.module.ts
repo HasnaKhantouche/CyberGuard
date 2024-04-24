@@ -28,6 +28,8 @@ import { DetailsPhishingComponent } from './details-phishing/details-phishing.co
 import { TeamComponent } from './team/team.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
+import { VueAnalystComponent } from './vue-analyst/vue-analyst.component';
+import { VueAdminComponent } from './vue-admin/vue-admin.component';
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'home', component: HomeComponent },
@@ -58,6 +60,8 @@ const routes: Routes = [
   { path: 'team', component: TeamComponent },
   { path: 'login', component: LoginComponent },
   { path: 'signup', component: SignupComponent },
+  { path: 'vue-analyst', component: VueAnalystComponent },
+  { path: 'vue-admin', component: VueAdminComponent },
 ];
 
 @NgModule({

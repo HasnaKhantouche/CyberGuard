@@ -1,7 +1,7 @@
 footer {
     background-color: rgb(57, 176, 184); /* Bleu acier clair */
     color: hsl(187, 100%, 94%); /* Light blue text */
-    width: 2263px; /* Assure que le footer prend toute la largeur */
+    width: 2270px; /* Assure que le footer prend toute la largeur */
     box-sizing: border-box; /* Inclut padding et border dans la largeur */
     top: 2600px;
     position:absolute;

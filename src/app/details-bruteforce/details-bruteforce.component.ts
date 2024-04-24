@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./details-bruteforce.component.css']
 })
 export class DetailsBruteforceComponent {
-
+ 
 }

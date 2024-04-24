@@ -33,6 +33,8 @@ import { RouterModule } from '@angular/router';
 import { TeamComponent } from './team/team.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
+import { VueAnalystComponent } from './vue-analyst/vue-analyst.component';
+import { VueAdminComponent } from './vue-admin/vue-admin.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -63,7 +65,9 @@ import { SignupComponent } from './signup/signup.component';
     DetailsPhishingComponent,
     TeamComponent,
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    VueAnalystComponent,
+    VueAdminComponent
   ],
   imports: [
     BrowserModule,

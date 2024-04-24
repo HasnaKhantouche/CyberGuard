@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./password-recovery.component.css']
 })
 export class PasswordRecoveryComponent {
-
+  goBack(): void {
+    window.history.back();
+  }
 }
