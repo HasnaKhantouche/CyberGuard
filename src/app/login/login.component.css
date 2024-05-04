@@ -7,6 +7,13 @@
     z-index: 2; /* Ensures it's above the background */
   }
 
+.error-message{
+    position: absolute;
+    color: red;
+    font-size: 30px;
+    top: 370px;
+    left: 1%;
+}
 
 .login-container form{
     position: absolute;
@@ -92,4 +99,23 @@
 
 .btn button:hover{
     background-color: rgb(2, 4, 29);
+}
+
+.already {
+    color: blanchedalmond;
+    font-size: 20px;
+    position: absolute;
+    top: 550px;
+    left: 13%;
+    width: 400px;
+}
+
+.signin {
+    color:rgb(255, 188, 188); 
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.underlined {
+    text-decoration: underline;
 }

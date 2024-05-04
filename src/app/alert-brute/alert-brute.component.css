@@ -92,3 +92,8 @@
 .button:hover {
     background-color: #d49a05; /* Change background color on hover */
 }
+.button a {
+    text-decoration: none; /* Remove underline */
+    color: #000; /* Change color to black */
+  }
+

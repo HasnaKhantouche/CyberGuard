@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -16,7 +16,7 @@ import { MalwareDetectionComponent } from './malware-detection/malware-detection
 import { BruteforceDetectionComponent } from './bruteforce-detection/bruteforce-detection.component';
 import { SqlinjectionDetectionComponent } from './sqlinjection-detection/sqlinjection-detection.component';
 import { PhshingDetectionComponent } from './phshing-detection/phshing-detection.component';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { AboutComponent } from './about/about.component';
 import { Footer2Component } from './footer2/footer2.component';
 import { FeedbackComponent } from './feedback/feedback.component';
@@ -35,6 +35,10 @@ import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { VueAnalystComponent } from './vue-analyst/vue-analyst.component';
 import { VueAdminComponent } from './vue-admin/vue-admin.component';
+import { TermsComponent } from './terms/terms.component';
+import { PrivacyComponent } from './privacy/privacy.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -67,15 +71,21 @@ import { VueAdminComponent } from './vue-admin/vue-admin.component';
     LoginComponent,
     SignupComponent,
     VueAnalystComponent,
-    VueAdminComponent
+    VueAdminComponent,
+    TermsComponent,
+    PrivacyComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    RouterModule
+    RouterModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+
+export class AppModule {
+ 
+ }

@@ -7,11 +7,11 @@
     <form>
         <div class="username">
             <img class="icon" src='../../assets/loginuser.png' alt="loginuser">
-            <input type="text" id="username" name="username" placeholder="Username" required>
+            <input type="email" id="email" name="email" placeholder="Email" required [(ngModel)]="email">
         </div>
         <div class="password">
             <img class="icon" src='../../assets/loginpwd.png' alt="loginpwd">
-            <input type="password" id="password" name="password" placeholder="Password" required>
+            <input type="password" id="password" name="password" placeholder="Password" required [(ngModel)]="password">
             <div class="password-actions">
                 <label>
                     <input type="checkbox" id="showPasswordCheckbox" name="showPasswordCheckbox">
@@ -20,8 +20,10 @@
                 <span class="forgot-password" id="forgotPasswordButton">Forgot Password?</span>
             </div>            
         </div>
+        <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
         <div class="btn">
-            <button id="btn" type="login">LOGIN</button>
+            <button id="btn" type="login" (click)="login()">LOGIN</button>
+            <span class="already" id="already" >Don't have an account ? <span class="signin">Sign up !</span></span>
         </div>
     </form>
     <app-footer></app-footer>

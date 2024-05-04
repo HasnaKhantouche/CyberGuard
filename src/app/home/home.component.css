@@ -1,39 +1,35 @@
 
-
-.home-container {
-    background-image: url('../../assets/home.png');
-  background-size: cover; /* Resize image to cover the container */
-  background-position: center; /* Center the background image */
-  background-repeat: no-repeat; /* Do not repeat the background image */
-  height: 98vh; /* Set the height of the container to full viewport height */
-  margin: 0; /* Remove default margin */
-  padding: 0; /* Remove default padding */
-  image-rendering: crisp-edges;
-  filter: brightness(1);
-  filter: blur(0);
+.pic{
+  width: 2285px;
+  height: 1030px;
+}
+.header {
+  position: absolute; /* This makes child elements with absolute positioning relative to this container */
+  z-index: 2; /* Ensures it's above the background */
 }
 
 
-
 .cyberguard-promise {
+  position: absolute;
     font-size: 70px;
     font-weight: bold;
     color: #95FFFF; /* Adjust color as needed */
     text-align: center;
-    margin-top: 180px;
-    margin-right: 1100px;
+    top: 200px;
+    left: 200px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .get-started-button {
+  position: absolute;
     background-color: transparent;
     border: 5px solid #8feaff; /* Colored border */
     color: #f9feff; /* Text color */
     font-size: 50px;
     padding: 10px 20px; /* Padding inside the button */
-    margin-top: 30px; /* Adjust spacing from the top */
     cursor: pointer; /* Show pointer cursor on hover */
-    margin-left: 480px;
+    top: 800px;
+    left: 500px;
     border-radius: 10px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }

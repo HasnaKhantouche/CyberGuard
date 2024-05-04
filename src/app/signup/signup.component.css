@@ -24,6 +24,7 @@
     color: aliceblue;
     font-size: 30px;
     border-width: 2px;
+    border-radius: 10px;
     border-color: transparent;
     text-align: center;
 }
@@ -53,8 +54,16 @@
   .Cpassword span:hover {
     text-decoration: underline; 
   }
-  
 
+  .error-message{
+    position: absolute;
+    color: red !important;
+    font-size: 50px;
+    top: 650px;
+    left: 15%;
+    text-decoration: none;
+  }
+  
 .camera{
     width: 320px;
     height: 400px ;
@@ -116,7 +125,13 @@
 .checkboxes2{
     position: absolute;
     top: 460px;
-    left: 69%;  
+    left: 65%;  
+}
+.checkboxes2 a{
+    color: aquamarine;
+}
+.checkboxes2 a:hover{
+    color:chocolate;
 }
 .checkboxes2 input{
     width: 30px;
@@ -127,6 +142,7 @@
 .checkboxes2 label{
     color: beige;
     font-size: 25px; 
+    font-weight: bold;
 }
 
 .btn button {
@@ -158,7 +174,7 @@
 }
 
 .signin {
-    color:red; 
+    color:rgb(255, 188, 188);
     display: inline-block;
     margin-left: 5px;
 }

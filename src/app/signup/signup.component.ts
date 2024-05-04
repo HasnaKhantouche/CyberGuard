@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-signup',
@@ -8,8 +8,48 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SignupComponent implements OnInit {
   imageUrl: string | ArrayBuffer | null = null;
+  passwordsMatch: boolean | null = null;
 
-  constructor() { }
+  username: string = '';
+  email: string = '';
+  password: string = '';
+  Cpassword: string = '';
+  role: string = '';
+
+  constructor(private http: HttpClient) {}
+
+
+  signup(): void {
+    let roleElement = document.querySelector('input[name="role"]:checked') as HTMLInputElement;
+    let role = roleElement ? roleElement.value : '';
+    console.log('Role:', role); // Check the role value in the console
+
+    const formData = {
+      username: this.username,
+      email: this.email,
+      password: this.password,
+      role: role
+    };
+    console.log('data :', formData);
+    
+    this.http.post('http://localhost:5000/submit_signup', formData)
+      .subscribe((response: any) => {
+        // Handle response
+        console.log('Signup form submitted successfully:', response);
+        // Clear form fields after successful submission
+        this.username = '';
+        this.email = '';
+        this.password = '';
+        this.Cpassword = '';
+
+        console.log('Signup cleared');
+        // No need to clear the role, as it's selected only once
+      }, error => {
+        console.error('Error submitting signup form:', error);
+      });
+  }
+  
+
 
   togglePasswordVisibility(inputId: string) {
     const input = document.getElementById(inputId) as HTMLInputElement;
@@ -29,24 +69,11 @@ export class SignupComponent implements OnInit {
     }
   }
 
-  submitForm() {
-    const form = document.querySelector('form') as HTMLFormElement;
-    const formData = new FormData(form);
 
-    // Envoi des données au serveur Flask
-    fetch('/sign_up', {
-      method: 'POST',
-      body: formData
-    })
-    .then(response => response.text())
-    .then(data => {
-      // Afficher la réponse du serveur
-      alert(data);
-    })
-    .catch(error => {
-      console.error('Error:', error);
-    });
-  }
+  checkPasswordMatch(): void {
+    this.passwordsMatch = this.password === this.Cpassword;
+}
+
 
   previewImage(event: any) {
     const file = event.target.files[0];

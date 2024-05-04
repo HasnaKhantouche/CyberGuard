@@ -3,17 +3,18 @@
     <img class="back" src='../../assets/back.png' alt="back" (click)="goBack()">
     <form>
         <div class="username">
-            <input type="text" id="username" name="username" placeholder="Username" required>
+            <input type="text" id="username" name="username" placeholder="Username" required [(ngModel)]="username">
         </div>
         <div class="email">
-            <input type="email" id="email" name="email" placeholder="Email" required>
+            <input type="email" id="email" name="email" placeholder="Email" required [(ngModel)]="email">
         </div>
         <div class="password">
-            <input type="password" id="password" name="password" placeholder="Password" required>   
+            <input type="password" id="password" name="password" placeholder="Password" required [(ngModel)]="password" (keyup)="checkPasswordMatch()">   
             <span (click)="togglePasswordVisibility('password')">Show</span>  
         </div>
         <div class="Cpassword">
-            <input type="password" id="Cpassword" name="Cpassword" placeholder="Confirm Password" required>      
+            <input type="password" id="Cpassword" name="Cpassword" placeholder="Confirm Password" required [(ngModel)]="Cpassword" (keyup)="checkPasswordMatch()">   
+            <span *ngIf="passwordsMatch === false" class="error-message">Passwords do not match</span>   
             <span (click)="togglePasswordVisibility('Cpassword')">Show</span>
         </div>
     </form>
@@ -30,14 +31,14 @@
             <label><input type="checkbox" id="default" name="default">Generate default photo</label>
         </div>
         <div class="checkboxes1">
-            <label><input type="checkbox" id="analystecheck" name="analystecheck">Analyst</label>
-            <label><input type="checkbox" id="admincheck" name="admincheck">Admin</label>
-        </div>
+            <label><input type="radio" id="analystecheck" name="role" value="analyst">Analyst</label>
+            <label><input type="radio" id="admincheck" name="role" value="admin">Admin</label>
+        </div>        
         <div class="checkboxes2">
-            <label><input type="checkbox" id="check" name="check">I agree with privacy and policy</label>
+            <label><input type="checkbox" id="check" name="check">i agree with <a href="/terms" target="_blank">Terms and Conditions</a> and <a href="/privacy" target="_blank">Privacy Policy</a></label>
         </div>
         <div class="btn">
-            <button type="signup">SIGNUP</button>
+            <button routerLink="/login" type="signup" (click)="signup()">SIGNUP</button>
         </div>
         <span class="already" id="already" >Already have an account ? <span class="signin">Sign in !</span></span>
     </div>

@@ -30,6 +30,8 @@ import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { VueAnalystComponent } from './vue-analyst/vue-analyst.component';
 import { VueAdminComponent } from './vue-admin/vue-admin.component';
+import { TermsComponent } from './terms/terms.component';
+import { PrivacyComponent } from './privacy/privacy.component';
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'home', component: HomeComponent },
@@ -62,6 +64,8 @@ const routes: Routes = [
   { path: 'signup', component: SignupComponent },
   { path: 'vue-analyst', component: VueAnalystComponent },
   { path: 'vue-admin', component: VueAdminComponent },
+  { path: 'terms', component: TermsComponent },
+  { path: 'privacy', component: PrivacyComponent },
 ];
 
 @NgModule({

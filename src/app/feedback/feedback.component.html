@@ -8,9 +8,10 @@
     </div>
     <h1>We appreciate your feedback !</h1>
     <p>We are always looking for ways to improve your experience. Please take a moment to tell us what you think.</p>
-    <textarea id="message" name="message" placeholder="Enter your feedback ..."></textarea>
+    <textarea id="message" name="message" placeholder="Enter your feedback ..." [(ngModel)]="feedbackMessage"></textarea>
     <div class="s2">
-    <button type="button" onclick="submitFeedback()">Submit my Feedback</button>
+        <button type="button" (click)="submitFeedback()" [disabled]="!feedbackMessage.trim()">Submit my Feedback</button>
+
     </div>
     <app-footer></app-footer>
 </div>
